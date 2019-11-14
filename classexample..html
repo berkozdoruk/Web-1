@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/jquery-3.4.0.min.js" type="text/javascript"></script>
+        <script>
+            $(function () {
+                $("#mypfirst").css("color", "red");
+                $("#mypfirst").css("font-size", "15pt");
+                $("#mypfirst").css("background-color", "yellow");
+                $("#mypfirst").css("font-style", "italic");
+                $("#mypsecond").css({"color":"blue","font-size":"15pt"});
+                $("#mypsecond").css("color", "blue");
+                
+                $("#myclikdiv").click(function(){
+                    alert($("#res").html());
+                    alert($("#mypfirst").css("color"));
+                    $("#mypsecond").animate({"font-size":"50pt"},2000);                        
+                });
+                $("#myclikdiv").mouseover(function(){
+                    $("#res").html("OVER");                    
+                });
+                $("#myclikdiv").mouseout(function(){
+                    $("#res").html("OUT");                    
+                });
+                
+            });
+
+        </script>
+    </head>
+    <body>
+        <p id="mypfirst">World</p>
+
+        <p id="mypsecond">Hello</p>
+        <div id="myclikdiv">Click</div>
+        
+       <div id="res">Result</div>
+    </body>
+</html>

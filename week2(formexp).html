@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Form Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Form Example</h1>
+        <form name="examForm">
+            <table border="2">
+                <tr>
+                    <td>Name</td>
+                    <td><input name="tName" id="tName"   type="text" value="Enter Name" size="50" maxlength="10"/></td>
+                </tr>
+                
+                 <tr>
+                    <td>Surname</td>
+                    <td><input type="text" name="tSurname" id="tSurname"   /></td>
+                </tr>
+                
+                    <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="tPwd" id="tPwd"   /></td>
+                </tr>
+                
+                   <tr>
+                       <td>City</td>
+                       
+                       
+                   <select name="combo_city" id="combocity">
+                       <option>
+                           Ankara
+                       </option>
+                        <option>
+                           İstanbul
+                       </option>
+                        <option>
+                           izmir
+                       </option>
+                   </select>
+                </tr>
+                
+                    <tr>
+                       <td>Payment</td>
+                       
+                       <td><input type="radio" name="radio" value="1">Cash
+                       <input type="radio" value="2"> VISA
+               </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input
+                                type="checkbox"  name="tAccept" value="3" />Accept  
+                                
+                               
+                            
+                            
+                        </td>
+                    </tr> 
+                
+                
+                
+            </table>
+            
+        </form>
+    </body>
+</html>

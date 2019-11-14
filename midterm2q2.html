@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                position:relative;
+                height: 50px;
+                border:1px solid black;
+                margin-bottom: 5px;
+                text-align: center;
+                line-height: 50px;
+                vertical-align: central;
+                
+            }
+            div span.divcontent{
+                color:yellow;
+                background-color: black;
+            }
+            div.lastdiv{
+                height: 30px;
+                line-height: 30px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <script>
+            var num=parseInt(window.prompt("Enter how many numbers","5"));
+            var left=50;
+            for(var i=0;i<=num;i++){
+                var rnd=Math.floor(Math.random()*101)+50;
+                  var rnd2=Math.floor(Math.random()*101)+50;
+                    var rnd3=Math.floor(Math.random()*101)+50;
+                var c="rgb("+rnd+","+rnd2+","+rnd3+")";
+                document.write("<div style='background-color:"+c+";width:"+rnd+"px;left:"+left+"px'><span class='divcontent'>"+rnd+"</span></div>");
+                left+=rnd;
+                
+                
+            }
+            document.write("<div style='left:50px;width:"+(left-50)+"px'>"+(left-50)+"</div>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        tr#firstrow{
+         background-color: orange;
+        
+        } 
+        tr#firstrow td{
+            
+            border:1px black solid;
+        }
+        td span{
+            color:blue;
+            font-style: italic;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <script>
+         var num=parseInt(window.prompt("Enter how many numbers","3"));
+         document.write("<table>");
+         document.write("<tr id='firstrow'><td>No</td><td>Random Number</td><td>Multiple of</td></tr>");
+         for(var i=1;i<=num;i++){
+             var rnd=Math.floor((Math.random()*81))+10;
+             var msg="No";
+             if(rnd%3==0){
+                 var res=rnd/3;
+                 msg="Yes<span> ("+res+")</span>";
+                 
+             }
+             document.write("<tr><td>"+i+"</td><td>"+rnd+"</td><td>"+res+"</td></tr>");
+             
+         }
+            
+            
+        </script>
+        <table>
+
+                <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
